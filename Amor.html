@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmoSanti</title>
+</head>
+<style>
+    body {
+            background-color: #ffffff;
+            margin: 40px;
+        }
+    .button {
+        background-color: #19a4df; /* Color de fondo verde */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 15px 32px; /* Espacio alrededor del texto */
+        text-align: center; /* Centrar el texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Formato de bloque en línea */
+        font-size: 15px; /* Tamaño de fuente */
+        margin: 4px 2px; /* Espacio alrededor del botón */
+        cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+        transition-duration: 0.4s; /* Duración de la transición */
+        border-radius: 100px;
+    }
+    </style>
+
+<body>
+
+    <h2 style="color:#19a4df";>Aquí puedes dar comentarios amorosos y cumplidos a Santi</h2>
+
+    <form action="amor.php" method="post">
+
+        Ingresa tus cumplidos:<br />
+        <textarea id="amor" name="amor" rows="2" cols="100"></textarea>
+        
+         
+        <button class="button">Enviar</button>
+    </form>
+    
+    <p>
+        *Ejemplo:<br> "Santi te amo, me estoy divorciando de mi esposa <br> y perdí mi trabajo pero saber que existes me hace <br> sentir mejor y me dará las fuerzas para vivir toda <br> mi vida al maximo y con una sonrisa sin importar <br> que".</br>
+    </p>
+
+    <button class="button" style="text-align: right;" onclick="cambiarPagina('index.html')">Inicio</button>
+
+    <script>
+        function cambiarPagina(url) {
+            window.location.href = url;
+            }
+    </script>
+
+</body>
+</html>

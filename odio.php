@@ -2,10 +2,10 @@
 
 $odio = $_POST["odio"];
 
-$host = "192.168.30.23";
-$dbname = "santiweb_db";
-$username = "root";
-$password = "";
+$host = "sql5.freesqldatabase.com";
+$dbname = "sql5664401";
+$username = "sql5664401";
+$password = "t9xLmWv9lv";
 
 mysqli_connect($host, $username, $password, $dbname);
 
